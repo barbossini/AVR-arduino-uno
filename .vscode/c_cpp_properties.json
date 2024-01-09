@@ -8,10 +8,10 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "c:/Users/Toyger/Documents/GitHub/AVR-arduino-uno/include",
-                "c:/Users/Toyger/Documents/GitHub/AVR-arduino-uno/src",
+                "c:/Users/Toyger/Documents/PlatformIO/Projects/PlatformIO_intro/include",
+                "c:/Users/Toyger/Documents/PlatformIO/Projects/PlatformIO_intro/src",
                 "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/cores/arduino",
-                "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/variants/standard",
                 "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
                 "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/libraries/HID/src",
                 "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
@@ -22,10 +22,10 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "c:/Users/Toyger/Documents/GitHub/AVR-arduino-uno/include",
-                    "c:/Users/Toyger/Documents/GitHub/AVR-arduino-uno/src",
+                    "c:/Users/Toyger/Documents/PlatformIO/Projects/PlatformIO_intro/include",
+                    "c:/Users/Toyger/Documents/PlatformIO/Projects/PlatformIO_intro/src",
                     "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/cores/arduino",
-                    "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                    "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/variants/standard",
                     "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
                     "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/libraries/HID/src",
                     "C:/Users/Toyger/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
@@ -36,7 +36,7 @@
             },
             "defines": [
                 "PLATFORMIO=60111",
-                "ARDUINO_AVR_BT",
+                "ARDUINO_AVR_UNO",
                 "F_CPU=16000000L",
                 "ARDUINO_ARCH_AVR",
                 "ARDUINO=10808",

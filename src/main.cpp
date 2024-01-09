@@ -4,7 +4,7 @@
 extern "C"
 {
 void start(void);
-void led(byte);
+void btnLED();
 }
 
 void setup() {
@@ -14,6 +14,5 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  led(1); delay(200);
-  led(0); delay(200);
+  btnLED();
 }
