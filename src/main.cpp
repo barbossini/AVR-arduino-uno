@@ -1,24 +1,38 @@
 #include <Arduino.h>
 
 // put function declarations here:
-int myFunction(int, int);
+#define LRED 12
+#define LGREEN 11
+#define LBLUE 10
+
+#define SRED 4
+#define SGREEN 3
+#define SBLUE 2
 
 void setup() {
   // put your setup code here, to run once:
-  int result = 0;
-  result = myFunction(2, 3);
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(LRED,OUTPUT);
+  pinMode(LGREEN,OUTPUT);
+  pinMode(LBLUE,OUTPUT);
+
+  digitalWrite(LRED,HIGH);
+  digitalWrite(LGREEN,HIGH);
+  digitalWrite(LBLUE,HIGH);
+
+  pinMode(SRED,INPUT);
+  pinMode(SGREEN,INPUT);
+  pinMode(SBLUE,INPUT);
+    delay(2000);
 }
 
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-  delay(1000);                      // wait for a second
-}
+  // put your main code here, to run repeatedly:
+  if(digitalRead(SRED) == HIGH) digitalWrite(LRED,LOW);
+  if(digitalRead(SGREEN) == HIGH) digitalWrite(LGREEN,LOW);
+  if(digitalRead(SBLUE) == HIGH) digitalWrite(LBLUE,LOW);
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  delay(100);
+  digitalWrite(LRED,HIGH);
+  digitalWrite(LGREEN,HIGH);
+  digitalWrite(LBLUE,HIGH);
 }
