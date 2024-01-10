@@ -1,18 +1,14 @@
-#include <Arduino.h>
-
-// put function declarations here:
+//-----------------------------
+// AVR Assembly via Arduino IDE
+//-----------------------------
 extern "C"
 {
-void start(void);
-void btnLED();
+  void start();
 }
-
-void setup() {
-  // put your setup code here, to run once:
+//----------------------------------------------------
+void setup()
+{
   start();
 }
-
-void loop() {
-  // put your main code here, to run repeatedly:
-  btnLED();
-}
+//----------------------------------------------------
+void loop() {}
